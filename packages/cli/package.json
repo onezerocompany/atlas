@@ -1,0 +1,24 @@
+{
+  "name": "atlas_cli",
+  "module": "src/index.ts",
+  "type": "module",
+  "bin": {
+    "atlas": "bin/atlas"
+  },
+  "scripts": {
+    "compile": "bun build --compile src/index.ts --outfile=bin/atlas",
+    "compile:watch": "bun build --compile src/index.ts --outfile=bin/atlas --watch"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "atlas-core": "../core",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "figures": "^6.0.1"
+  }
+}

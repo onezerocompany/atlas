@@ -1,0 +1,8 @@
+name: Atlas
+github_url: https://github.com/onezerocompany/atlas
+projects:
+  - name: Atlas CLI
+    id: atlas_cli
+    description: CLI tool for the Atlas management system
+    type: bun
+    path: packages/atlas_cli
